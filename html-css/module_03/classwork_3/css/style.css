@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+		padding: 3px;
+
+}
+
+.header {
+		height: 40px;
+		background-color: #5caeff;
+		font-size: 16px;
+		margin-bottom: 5px; 
+}
+
+.nav {
+		height: 35px;
+		background-color: #ffef38;
+		font-size: 16px;
+		margin-bottom: 5px;
+}
+
+.content {
+		width: 70%;
+		height: 80px;
+		background-color: #655bff;
+		display: inline-block;
+		font-size: 16px;
+		margin-right: 0.22%;
+}
+
+.sidebar {
+		margin-left: -4px;
+		width: 29.75%;
+		height: 80px;
+		background-color: #ff6942;
+		display: inline-block;
+		font-size: 16px;
+}
+
+.footer {
+		height: 50px;
+		background-color: #1c8012;
+		font-size: 16px;
+}
