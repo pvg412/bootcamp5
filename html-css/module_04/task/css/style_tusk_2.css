@@ -5,3 +5,230 @@
     font-family: "Roboto", sans-serif;
 }
 
+.wrap {
+    background-color: #f7fdfe;
+}
+
+
+/*хэдэр*/
+.container {
+    margin: auto;
+    max-width: 940px;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: #82868f;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 510px;
+}
+
+
+.logo, .nav, .nav-item {
+    display: inline-block;
+}
+
+/*убираем у li точки*/
+ul {
+    list-style: none;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #82868f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    padding: 15px 18px 15px 18px;
+}
+
+.nav-item:hover > .nav-link {
+    background-color: #0ebfdd;
+    color: #f7fdfe;
+    border-radius: 25px;
+}
+
+/*мэйн*/
+.wrap-info {
+    background-image: url("../img/pick1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info {
+    padding: 400px 0 80px 0;
+}
+
+.title {
+    text-align: center;
+    color: #f7fdfe;
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+}
+
+.info-text {
+    text-align: center;
+    color: #f7fdfe;
+    font-size: 20px;
+}
+
+
+/*блок about*/
+.section-about {
+    margin: 75px 0 75px;
+}
+
+.title-about {
+    color: #0ebfdd;
+}
+
+
+
+.text-title-about {
+    text-align: center;
+    font-size: 20px;
+    color: #45494d;
+    margin: 0 0 70px 0;
+}
+
+/*блок с фото*/
+.team {
+    padding: 60px 0 65px 0;
+}
+
+.team-list {
+    text-align: center;
+}
+
+.team-item {
+    display: inline-block;
+    margin-right: 70px;
+
+}
+
+.team-picture {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-item:last-child {
+    margin-right: 0;
+}
+
+
+.wrap-team {
+    background-color: #0ebfdd;
+}
+
+.team-title, .team-text {
+    color: #f7fdfe;
+    text-align: center;
+}
+
+.team-text {
+    font-style: italic;
+}
+
+.team-list {
+    margin-bottom: 100px;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    color: #f7fdfe;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #f7fdfe;
+    color: #0ebfdd;
+}
+
+/*блок карта*/
+.wrapmap {
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+/*футер*/
+.wrapfoot {
+    background-color: #45494d;
+}
+
+/*футер топ*/
+.footer-top {
+    padding: 15px 0 20px;
+    border-bottom: 2px solid rgba(138, 141, 145, 0.3);
+}
+
+.footer-item {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+/*убираем правый отступ у footer-item у последнего по списку li*/
+.footer-item:last-child {
+margin-right: 0;
+}
+
+.footer-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #d7dee4;
+    text-decoration: none;
+}
+
+/*футер ботом*/
+.footer-bottom {
+    text-align: right;
+    padding: 15px 0;
+}
+
+.license {
+    text-align: right;
+    display: inline-block;
+}
+
+.license-item {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0 15px;
+    border-right: 1px solid #d7dee4;
+}
+
+.license-item:last-child {
+    padding-left: 0px;
+}
+
+.license-link, .copyright {
+    color: #d7dee4;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0 0 0 15px;
+}
+
+
+.copyright {
+    display: inline-block;
+}
