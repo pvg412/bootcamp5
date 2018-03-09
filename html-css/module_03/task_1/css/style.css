@@ -1,54 +1,107 @@
 * {
-    boxing-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
-    margin: auto;
     width: 100%;
-
 }
 
-header {
-    background-color: #b1ffff;
-    padding: 0 0 0 7%;
+
+
+
+
+
+/*хэдэр*/
+.header {
+    background-color: #d7edf8;
+    padding-left: 70px;
 }
 
-h1 {
+/*логотип*/
+.logotype {
     display: inline-block;
-    padding-top: 5px;
+    padding: 0 0 0 0;
+
 }
 
-.navigator {
-    display: inline-block;
-    padding: 0 0 0 700px;
-}
-
-ul.nav > li {
-    display: inline-block;
-    height: 55px;
-    vertical-align: middle;
-    line-height: 50px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.box {
-    background-color: #78b1ff;
-    padding: 0 7%;
-}
-
-h2 {
+.logotypetext {
+    font-size : 30px;
+    margin: 0 0 0 0;
     line-height: 60px;
 }
 
-.text1, .text2 {
-    line-height: 30px;
+.logo {
+    padding: 0 0 0 0;
+    margin: 5px 15px 0 0;
+    width: 30px;
 }
 
+
+/*меню навигации*/
+.navigator {
+    display: inline-block;
+    margin: 0 0 0 37%;
+
+}
+
+.listnav {
+    vert-align: top;
+}
+
+ul.listnav > li.li {
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+.list2 {
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    padding: 26px 21px 25px 21px;
+}
+
+.navigator li.li:hover .list2 {
+    color: white;
+    background-color: #38b6e8;
+    /*display: block;*/
+}
+
+
+
+
+
+
+
+/*мейн*/
+.box {
+    background-color: #78c5e3;
+    padding: 0 0 0 8%;
+}
+
+/*текст в мейне*/
+.text {
+    font-size: 24px;
+    line-height: 60px;
+    color: white;
+}
+
+.text1 {
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+.text2 {
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/*блок с картинками*/
 .image {
     margin: 0;
     padding: 0;
@@ -56,15 +109,41 @@ h2 {
 
 img {
     display: inline-block;
-    width: 23%;
+    width: 22%;
     margin: 0 12px 0 0;
     padding-top: 12px;
 }
 
+
+
+
+
+
+
+/*нижние ссылки и текст копирайт*/
+.foot {
+    height: 140px;
+    background-color: #78c5e3;
+    padding: 0 0 0 4%;
+}
+
 .link {
     display: inline;
+    margin: 0 0 0 40.5%;
+}
+
+.cop {
+    width: 30px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .text3 {
-    text-align: left;
+    line-height: 20px;
+    width: 390px;
+    text-align: center;
+    padding: 3px 2px 3px;
+    border: 1px solid mediumslateblue;
+    background-color: #538a9f;
+    color: white;
 }
