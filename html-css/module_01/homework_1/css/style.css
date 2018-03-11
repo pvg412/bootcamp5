@@ -37,6 +37,7 @@
 	text-decoration: none;
 	color: #626262;
 	font-size: 14px;
+	font-weight: bold;
 }
 
 .nav-list:hover > .nav-list-link {
@@ -58,8 +59,11 @@
 }
 
 
-.name-text {
-	margin-top: 50px;
+.name_text {
+	margin-top: 30px;
+	font-family: "Ubuntu", sans-serif;
+	color: #c8c3b8;
+	text-transform: uppercase;
 }
 
 .caption {
@@ -97,4 +101,5 @@
 	margin-bottom: 65px;
 	font-size: 20px;
 	background-color: white;
+	color: #6c6c6c;
 }
