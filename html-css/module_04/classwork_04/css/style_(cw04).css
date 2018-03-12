@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*задание 1*/
+.ul {
+    background-color: red;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.list {
+    float: left;
+    list-style: none;
+    padding: 40px;
+}
+
+
+.link {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.list:hover > .link {
+    color: blue;
+}
+
+
+
+
+
+/*задание 2*/
+
+.main {
+    margin: 20px 0 20px 0;
+}
+
+.list1 {
+    float: left;
+    margin: 0 10px 0 0;
+    border: 1px solid black;
+}
+
+.clearfix1:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.list1:nth-child(3n+3) {
+    list-style: none;
+    background-color: #88292F;
+}
+
+.list1:nth-child(3n+2) {
+    list-style: none;
+    background-color: #5DB7DE;
+}
+
+.list1:nth-child(3n+1) {
+    list-style: none;
+    background-color: #0D5D56;
+}
+
+.link1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*задание 3*/
+.link1::before {
+    content: "\2192";
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*задание 4*/
+
+.wrap2 {
+    counter-reset: list;
+}
+
+.list2::before {
+    counter-increment: list;
+    content: counter(list, upper-roman);
+}
+
+.list2 {
+    float: left;
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    background-color: #1c8012;
+    border: 1px solid black;
+
+}
+
+.clearfix1:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.link2 {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}

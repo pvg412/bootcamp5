@@ -1,17 +1,18 @@
 * {
-	box-sizing: border box;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: "Playfair Display", sans-serif;
 }
 
 .wrapper {
-
+	max-width: 900px;
+	margin: auto;
+	padding: 75px 0 65px 0 ;
 }
 
-.container {
-	max-width: 1200px;
-	margin: auto;
+.header {
+	margin: 0 0 0 0;
 }
 
 .nav-list, .list-box {
@@ -24,12 +25,11 @@
 }
 
 .nav-list {
-	margin: 75px 0 100px 0;
-	padding-right: 100px;
+	margin-right: 100px;
 }
 
 .nav-list:last-child {
-	padding-right: 0;
+	margin-right: 0;
 }
 
 .nav-list-link {
@@ -47,15 +47,22 @@
 
 
 
-
-
 .main {
-	margin-left: 160px;
+	margin-bottom: 56px;
 }
+/*.box {
+	display: inline-block;
+	margin: auto;
+}*/
 
 .list-box {
 	max-width: 420px;
-	padding-right: 60px;
+	margin-right: 56px;
+	margin-top: 130px;
+}
+
+.list-box:nth-child(2n+2) {
+	margin-right: 0;
 }
 
 
@@ -69,27 +76,25 @@
 .caption {
 	font-size: 30px;
 	color: #626262;
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 .text {
 	font-size: 14px;
 	color: #626262;
 	margin-top: 40px;
-	margin-bottom: 130px;
 }
 
-.text1 {
+.text:last-child(-1n+2)  {
 	font-size: 14px;
 	color: #626262;
 	margin-top: 40px;
-	margin-bottom: 55px;
+	margin-bottom: 10px;
 }
 
 .picture {
 	width: 420px;
 	height: 275px;
-	margin-bottom: 30px;
 }
 
 .btn {
@@ -98,7 +103,7 @@
 	width: 160px;
 	height: 55px;
 	border: 1px solid #626262;
-	margin-bottom: 65px;
+	/*margin-bottom: 65px;*/
 	font-size: 20px;
 	background-color: white;
 	color: #6c6c6c;
