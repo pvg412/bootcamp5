@@ -195,7 +195,7 @@
 
 .article2:nth-child(1n+3) {
     margin-right: 0;
-}
+*}
 
 .pic1 {
     width: 350px;

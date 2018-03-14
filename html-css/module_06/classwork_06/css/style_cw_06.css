@@ -1,0 +1,62 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    width: 1000px;
+    /*color: white;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 300px;
+}
+
+/*
+.box1 {
+    background-color: green;
+}
+
+.box2 {
+    background-color: yellow;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: red;
+}
+
+.box5 {
+    background-color: orange;
+}
+
+.box6 {
+    background-color: palegreen;
+}
+
+.box7 {
+    background-color: orchid;
+}
+
+.box8 {
+    background-color: aqua;
+}
+
+.box9 {
+    background-color: crimson;
+
+}
+*/
+
