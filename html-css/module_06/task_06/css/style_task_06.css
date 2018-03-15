@@ -5,29 +5,140 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
 }
 
 /*1секция*/
 .wrapper-header {
     background-image: url("../img/pic1.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
     background-size: cover;
-    width: 100%;
-    height: auto;
+    background-position: top center;
+    background-attachment: fixed;
+    /*width: 100%;*/
+    /*height: auto;*/
 }
 
 .wrapper-top {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px; /*минимальная высота - использовать в том случае, если мы знаем, что эта высота будет статичной по дефолту*/
+    /*line-height: 80px; межстрочный интервал*/
+    align-items: center;
+}
+
+.nav {
+    flex-basis: 510px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 32px;
+    color: #95a5ad;
+}
+
+.logo-span {
+    color: #36aeea;
+}
+
+.menu-link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #9daeb6;
+    text-transform: uppercase;
+    padding-bottom: 10px;
 
 }
 
-.container {
-    /*width: 1140px;*/
+.menu-link:hover {
+    border-bottom: 2px solid #36aeea;
 }
 
+.call {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    color: #36aeea;
+    padding: 14px 44px;
+    border: 2px solid #36aeea;
+    border-radius: 4px;
+    transition: 0.3s; /*плавное использование hover*/
+}
 
+.call:hover {
+    background-color: #36aeea;
+    color: #fff;
+}
 
+.info {
+    padding: 170px 0 190px 40px;
+}
 
+.info-item {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.info-span {
+    font-family: 'Euphoria Script', cursive;
+    font-size: 65px;
+    color: #36aeea;
+    text-transform: none;
+    display: block;
+    margin-top: -30px;
+}
+
+.info-text {
+    margin-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #d7dde1;
+    max-width: 450px;
+}
+
+.info-btn {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    background-color: #36aeea;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 75px;
+    border: 2px solid #36aeea;
+    border-radius: 4px;
+    transition: 0.3s; /*плавное использование hover*/
+    margin-top: 30px;
+}
+
+.info-btn:hover {
+    background-color: transparent;
+    border: 2px solid #36aeea;
+}
 
 /*2 секция*/
+/*
 .wrapper {
 
 }
@@ -35,4 +146,4 @@
 .about {
     background-image: url("../img/world_map.png");
     background-repeat: no-repeat;
-}
+}*/
