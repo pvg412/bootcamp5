@@ -1,0 +1,356 @@
+@import "variable_hw_05.css";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    /*border: 1px solid #ff6942;*/
+}
+
+.logo {
+    float: left;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    color: #555252;
+    line-height: 91px;
+    text-decoration: none;
+}
+
+.logo:first-letter {
+    color: #1abc9c;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+    line-height: 91px;
+}
+
+.menu_item {
+    float: left;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 32px 0 0;
+}
+
+.menu_item:last-child {
+    margin: 0 0 0 0;
+}
+
+.menu_item:hover .menu_item_link{
+    color: #1abc9c;
+}
+
+.menu_item_link {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.header {
+    /*border: 4px solid #1c8012;*/
+}
+
+/*стили для box1*/
+.box1 {
+    background-image: url(../img/pic1.jpg);
+    background-size: cover;
+}
+
+.section-box1 {
+    width: 1100px;
+    float: left;
+}
+
+.l_btn_box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #1abc9c;
+    border: 0;
+    color: #fff;
+    font-size: 60px;
+    vertical-align: bottom;
+    font-family: 'Roboto', sans-serif;
+}
+
+.r_btn_box1 {
+    width: 100px;
+    height: 100px;
+    background-color: #1abc9c;
+    border: 0;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.l_btn_box1:hover {
+    background-color: rgba(78,198,171,0.651);
+}
+
+.r_btn_box1:hover {
+    background-color: rgba(78,198,171,0.651);
+}
+
+.lb {
+    background-image: url(../img/left.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.rb {
+    background-image: url(../img/right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.rbtn {
+    float: right;
+    margin-top: 210px;
+}
+
+.lbtn {
+    float: left;
+    margin-top: 210px;
+}
+
+
+
+.caption_box1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.text_link_caption_box1 {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content_box1 {
+    margin: auto;
+    width: 770px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 210px;
+    margin-bottom: 280px;
+}
+
+/*стилия для box2*/
+.box2 {
+    background-color: #e9f0fd;
+    padding-bottom: 100px;
+}
+
+.caption_box2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #515151;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.caption_box2:after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 7px;
+    background-color: #1abc9c;
+    margin: 30px auto;
+
+}
+
+.gallery {
+    margin-top: 78px;
+}
+
+.article_gallery {
+    float: left;
+    width: 250px;
+    margin-right: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.article_gallery:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.article_gallery > .img_gallery {
+    display: block;
+    margin: auto;
+}
+
+.img_gallery {
+    width: 250px;
+}
+
+.nav_gallery {
+    display: none;
+    position: relative;
+}
+
+.article_gallery:hover > .nav_gallery {
+    display: block;
+    margin: auto;
+    background-color: rgba(0,0,0,0.4);
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.btn_box2 {
+    padding: 17.5px 17px 17.5px 59px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    background-color: #323232;
+    color: #fff;
+    font-family: 'open sans', sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: 134px;
+    left: 35px;
+    background-image: url(../img/icon4.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+
+.btn_box2:hover {
+    background-color: #1abc9c;
+}
+
+.icon:hover {
+    background-color: #1abc9c;
+}
+
+.icon {
+    display: block;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.icon1 {
+    background-image: url(../img/icon2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    top: 78px;
+    left: 35px;
+}
+
+.icon2 {
+    background-image: url(../img/icon1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    top: 78px;
+    left: 93.5px;
+}
+
+.icon3 {
+    background-image: url(../img/icon3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    top: 78px;
+    left: 152px;
+}
+
+.name {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #323232;
+    text-transform: uppercase;
+    height: 40px;
+    width: 204px;
+    padding: 9px 0 0 12px;
+}
+
+.price {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #8c8c8c;
+    text-transform: uppercase;
+    height: 40px;
+    width: 50px;
+    margin-left: -4px;
+    text-align: center;
+    padding: 9px 0 0 0;
+}
+
+.article_gallery:hover .name {
+    color: #ffffff ;
+    background-color: #1abc9c;
+}
+
+.article_gallery:hover .price {
+    color: #ffffff;
+    background-color: #7fd9c7;
+}
+
+
+
+/*стили для футера*/
+.wrapper_footer {
+    background-color: #323232;
+}
+
+.footer {
+    padding: 38px 0 38px 0;
+    text-align: center;
+}
+
+.text_footer {
+    display: inline-block;
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    padding-left: 5px;
+    color: #fff;
+}
+
+.text_footer:nth-child(-n+1) {
+    border-right: 1px solid #fff;
+    padding-right: 5px;
+}
+
+.text_footer_col {
+    color: #45b6a1;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+

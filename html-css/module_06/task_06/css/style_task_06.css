@@ -1,3 +1,5 @@
+@import "variable_task_06.css";
+
 * {
     /*bszbb - аббревиатура*/
     -webkit-box-sizing: border-box;
@@ -12,6 +14,7 @@
 .container {
     width: 1140px;
     margin: auto;
+    padding: 0 15px;
 }
 
 /*1секция*/
@@ -55,11 +58,11 @@
 }
 
 .logo-span {
-    color: #36aeea;
+    color: var(--btn-color);
 }
 
 .menu-link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--text);
     font-size: 12px;
     font-weight: bold;
     color: #9daeb6;
@@ -69,7 +72,7 @@
 }
 
 .menu-link:hover {
-    border-bottom: 2px solid #36aeea;
+    border-bottom: 2px solid var(--btn-color);
 }
 
 .call {
@@ -78,15 +81,15 @@
     background-color: transparent;
     font-size: 12px;
     font-weight: 700;
-    color: #36aeea;
+    color: var(--btn-color);
     padding: 14px 44px;
-    border: 2px solid #36aeea;
+    border: 2px solid var(--btn-color);
     border-radius: 4px;
     transition: 0.3s; /*плавное использование hover*/
 }
 
 .call:hover {
-    background-color: #36aeea;
+    background-color: var(--btn-color);
     color: #fff;
 }
 
@@ -95,7 +98,7 @@
 }
 
 .info-item {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--text);
     color: #fff;
     font-size: 50px;
     text-transform: uppercase;
@@ -104,7 +107,7 @@
 .info-span {
     font-family: 'Euphoria Script', cursive;
     font-size: 65px;
-    color: #36aeea;
+    color: var(--btn-color);
     text-transform: none;
     display: block;
     margin-top: -30px;
@@ -112,7 +115,7 @@
 
 .info-text {
     margin-top: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--text);
     font-size: 18px;
     color: #d7dde1;
     max-width: 450px;
@@ -121,12 +124,12 @@
 .info-btn {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
-    background-color: #36aeea;
+    background-color: var(--btn-color);
     font-size: 12px;
     font-weight: 700;
     color: #fff;
     padding: 20px 75px;
-    border: 2px solid #36aeea;
+    border: 2px solid var(--btn-color);
     border-radius: 4px;
     transition: 0.3s; /*плавное использование hover*/
     margin-top: 30px;
@@ -134,16 +137,157 @@
 
 .info-btn:hover {
     background-color: transparent;
-    border: 2px solid #36aeea;
+    border: 2px solid var(--btn-color);
+    letter-spacing: 2px; /*расстояние между буквами*/
 }
 
 /*2 секция*/
-/*
 .wrapper {
-
+    background-color: #f6f4f4;
 }
 
 .about {
     background-image: url("../img/world_map.png");
     background-repeat: no-repeat;
-}*/
+    background-position: 90px 20px;
+    position: relative;
+    padding-top: 255px;
+    padding-bottom: 230px;
+}
+
+.about-title {
+    font-family: var(--text);
+    font-size: 20px;
+    color: #393b44;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-family: var(--text);
+    font-size: 14px;
+    color: #949494;
+}
+
+.about-text {
+    max-width: 350px;
+}
+
+.about-btn {
+    padding: 14px 24px;
+    letter-spacing: 2px;
+}
+
+.about-btn:hover {
+    padding: 14px 24px;
+    color: var(--btn-color);
+}
+
+
+.about-pict1 {
+    width: 800px;
+    height: 570px;
+    display: block;
+    position: absolute;
+    top: -35px;
+    right: -104px;
+}
+
+.about-pict2 {
+    width: 350px;
+    /*height: 330px;*/
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    left: 380px;
+}
+
+
+
+
+/*секция 3*/
+.wrapper-journal {
+    background-color: #ffffff;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    color: #2c2e37;
+    font-family: var(--text);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.journal {
+    padding: 110px 0 90px 0;
+}
+
+.journal-body {
+    display: flex;
+    counter-reset: journal-counter; /*создаем счетчик в контейнере и даем ему имя*/
+}
+
+.journal-article {
+    flex-basis: 33.3%;
+    counter-increment: journal-counter; /*указываем, что мы будем считать, в данном случае статью*/
+}
+
+.journal-article-caption {
+    font-size: 11px;
+    font-family: var(--text);
+    text-transform: uppercase;
+    color: var(--btn-color);
+}
+
+.journal-img {
+    width: 380px;
+    height: 380px;
+}
+
+.journal-article-title {
+    font-family: var(--text);
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 50px 0 30px 0;
+}
+
+.article-content {
+    padding: 50px 30px 30px 30px;
+    text-align: center;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*указываем счетчик*/
+.article-content > .text:after {
+    content: "0"counter(journal-counter);
+    display: block;
+    font-size: 14px;
+    font-family: var(--text);
+    margin-top: 25px;
+    font-style: italic;
+}
+
+.rev {
+
+}
+
+.icon-container {
+    position: relative;
+}
+
+.fa-gratipay, .fa-envira, .fa-tint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+}

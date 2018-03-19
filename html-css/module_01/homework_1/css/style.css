@@ -12,7 +12,8 @@
 }
 
 .header {
-	margin: 0 0 0 0;
+	margin: 0 0 130px 0;
+
 }
 
 .nav-list, .list-box {
@@ -44,6 +45,10 @@
 	color: #03a9f4;
 }
 
+/*исправил ошибку, на которую указал Вова*/
+.list-box:nth-child(-n+2) {
+	margin-top: 0;
+}
 
 
 
