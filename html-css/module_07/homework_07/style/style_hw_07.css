@@ -1,0 +1,37 @@
+@import "font_hw_07.css";
+@import "variable_hw_07.css";
+
+
+.container {
+    width: 930px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Wisdom", sans-serif;
+    color: #fed136;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.nav {
+    flex-basis: 480px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.menu-item-link {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #222222;
+}

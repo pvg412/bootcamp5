@@ -1,0 +1,45 @@
+/*
+указываем font-family - произвольно
+потом прописываем src, в котором указываем url на папку
+с содержанием шрифта и подключаем отдельно каждый файл со шрифтом в основной папке
+в format - прописываем формат файла
+между url и format не ставим пробелы, но обязательно закписываем содержимое скобок в ковычки
+font-weight - прописываем normal
+font-style  - прописываем normal
+*/
+
+@font-face {
+    font-family: "SENYUM";
+    src: url("../font/font/SENYUM V1/SENYUM V1.ttf")format ("truetype"),
+         url("../font/font/SENYUM V1.woff")format("woff"),
+         url("../font/font/SENYUM V1.woff2")format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sketchetica";
+    src: url("..font/font/Sketchetica-Light/Sketchetica-Light.woff2") format("woff2"),
+         url("../font/font/Sketchetica-Light/Sketchetica-Light.woff")format("woff"),
+         url("../font/font/Sketchetica-Light/Sketchetica-Light.ttf")format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sketchetica";
+    src: url("..font/font/Sketchetica-Bold/Sketchetica-Bold.woff2") format("woff2"),
+    url("../font/font/Sketchetica-Bold/Sketchetica-Boldt.woff")format("woff"),
+    url("../font/font/Sketchetica-Bold/Sketchetica-Bold.ttf")format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sketchetica";
+    src: url("..font/font/Sketchetica-Black/Sketchetica-Black.woff2") format("woff2"),
+    url("../font/font/Sketchetica-Black/Sketchetica-Black.woff")format("woff"),
+    url("../font/font/Sketchetica-Black/Sketchetica-Black.ttf")format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
