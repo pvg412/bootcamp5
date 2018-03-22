@@ -1,0 +1,87 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: var(--text);
+    outline: none;
+}
+
+/*1. задаем все стили для общего контейнера, которые не будут меняться*/
+.container {
+    min-width: 20rem;
+    max-width: 50.5rem;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/*это правило (все свойства, что записаны) нам говорит, что все картинки будут responsive*/
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.article-title {
+    color: #333333;
+    font-size: 1.625rem;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.text {
+    margin-bottom: 0.625rem;
+    color: #777777;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+/*для последних параграфов убираем любой отступ*/
+.text:last-child {
+    margin-bottom: 0;
+}
+
+
+/*во время записи градиента, для фоновой картинки, нужно указать в скобках два rgba, а уже потом, через запятую - url адрес для самой картинки*/
+.wrapper-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*задаем отступы*/
+.about {
+    padding: 4.438rem 0;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.625rem;
+}
+@media (min-width: 992px) {
+    .about {
+        padding: 11rem 0;
+    }
+
+    .title {
+        font-size: 3.875rem;
+    }
+    .article-title {
+        font-size: 2rem;
+    }
+}
+/*задаем верхний отступ для мэйна*/
+.main {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}

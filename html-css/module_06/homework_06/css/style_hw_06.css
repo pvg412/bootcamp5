@@ -176,11 +176,11 @@
 
 /*скрытое меню для галлереи*/
 .article-menu {
-    width: 376px;
+    width: 378px;
     height: 492px;
     /*display: none;*/
     position: absolute;
-0+  transition: 200ms linear;
+    transition: 200ms linear;
     top: 0;
     left: 0;
     background-image: linear-gradient(to bottom, rgba(239, 139, 138, 0.8), rgba(228, 207, 129, 0.8));

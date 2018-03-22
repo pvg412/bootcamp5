@@ -1,0 +1,41 @@
+@import "var_21.03.2018.css";
+@import "reset.css";
+@import "header.css";
+@import "footer.css";
+
+.wrapper-img {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/gallery-bg.jpg);
+}
+.gallery {
+    margin-top: 2rem 0 1.3rem;
+}
+.gallery-text {
+    text-align: center;
+}
+.gallery-img {
+    transition: 0.5s;
+}
+.gallery-img:hover, .gallery-img:last-child:hover {
+    transform: translate(0, -0.5rem);
+    box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem #777;
+}
+.gallery-img:nth-child(odd):hover {
+    transform: translate(0, -0.5rem);
+    box-shadow: 0 0.5rem 0.2rem 0.1rem #777;
+}
+.gallery-img:last-child:hover {
+    transform: translate(0, -0.5rem);
+    box-shadow: 0.5rem 0.5rem 0.2rem 0.1rem #777;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery-img {
+        width: 50%;
+        align-self: flex-start;
+        flex-grow: 1; /*это свойство, при применени будет занимать свободное место в строке, например для седьмой картинки, если она не помещается в верхней сроке*/
+    }
+}
