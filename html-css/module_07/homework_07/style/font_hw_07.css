@@ -33,3 +33,14 @@ url("../font/font/SENYUM V1.woff2")format("woff2");
     font-weight: 700;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/roboto-slab-v7-latin-300.woff")format("woff");
+         url("../font/Roboto/roboto-slab-v7-latin-300.woff2")format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+

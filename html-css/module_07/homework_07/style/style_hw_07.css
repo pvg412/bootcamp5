@@ -6,32 +6,59 @@
     width: 930px;
     margin: auto;
 }
-
+/*хэдэр*/
 .header {
     display: flex;
     justify-content: space-between;
+    margin-top: 2.687rem;
 }
-
 .logo {
-    font-family: "Wisdom", sans-serif;
+    font-family: var(--ffw);
     color: #fed136;
-    font-size: 26px;
+    font-size: 1.625rem;
     text-decoration: none;
 }
-
 .nav {
-    flex-basis: 480px;
+    flex-basis: 30rem;
 }
-
 .menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
 }
-
 .menu-item-link {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--ffm);
     text-decoration: none;
     text-transform: uppercase;
     color: #222222;
+}
+
+
+
+.caption {
+    font-family: var(--ffm);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.text-caption {
+    font-family: "Droid Sans", sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #777777;
+    text-align: center;
+}
+.about {
+    display: flex;
+    text-align: center;
+    border: 1px solid #66A523;
+}
+.about-caption {
+    font-family: var(--ffm);
+    font-size: 1.125rem;
+}
+.about-text {
+    font-family: var(--ffr);
+    font-size: 0.875rem;
+
 }
