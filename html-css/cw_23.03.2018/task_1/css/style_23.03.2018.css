@@ -1,0 +1,36 @@
+
+.container-fluid {
+    background-color: red;
+    height: 100vh;
+}
+
+.col-12 {
+    background-color: dodgerblue;
+    border: 2px solid black;
+    font-size: 150px;
+    text-align: center;
+}
+.col-8 {
+    background-color: dodgerblue;
+    border: 2px solid black;
+    font-size: 150px;
+    text-align: center;
+}
+.black {
+    background-color: #000;
+    color: #fff;
+}
+.yellow {
+    background-color: yellow;
+}
+.pink {
+    background-color: pink;
+}
+.green {
+    background-color: limegreen;
+}
+/*.margin {
+    margin-bottom: 1.2rem;
+}*/
+
+

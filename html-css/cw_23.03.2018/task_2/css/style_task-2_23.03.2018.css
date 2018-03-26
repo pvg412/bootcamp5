@@ -1,0 +1,161 @@
+@import "reset_task-2_23.03.2018.css";
+@import "fontAwesome.css";
+@import "var_task-2_23.03.2018.css";
+
+.avalon-bg {
+    background-image: url(../img/banner-bg.png);
+    background-repeat: no-repeat;
+    padding: 175px 0 175px 120px;
+    background-attachment: fixed;
+}
+.avalon-text {
+    font-size: 14px;
+    color: #ffffff;
+}
+.avalon-title {
+    font-size: 64px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 52px;
+}
+.btn {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid ;
+    border-radius: 2rem;
+    outline: none;
+    padding: 13px 20px;
+    letter-spacing: 1px;
+}
+.avalon-text:after {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f4bc51;
+    margin: 20px 0 0 0;
+}
+.template {
+    display: block;
+}
+.danya {
+    background-color: #f4bc51;
+    text-align: center;
+    padding: 100px 45px;
+    color: #ffffff;
+}
+.avalon-img {
+    margin-bottom: 20px;
+}
+.img-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.img-subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.img-subtitle:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 30px 0;
+}
+
+
+
+
+/*section_2*/
+.theme {
+    margin-top: 10px;
+}
+.theme-bg-left {
+    background-image: url(../img/best-offer-bg.png);
+    padding: 175px 0;
+}
+.theme-img {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 140px;
+}
+.subtitle {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 33px;
+    font-weight: 700;
+    text-align: center;
+}
+.theme-bg-right {
+    padding: 80px 40px;
+    background-color: #eeeeee;
+}
+.theme-layout {
+    display: flex;
+}
+.color {
+    color: #b94e5e;
+    font-weight: 700;
+}
+.theme-title {
+    font-size: 32px;
+    color: #121212;
+    font-weight: 300;
+}
+.theme-text {
+    font-size: 13px;
+    color: #4a4a4a;
+    margin: 18px 0;
+}
+.theme-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 45px;
+}
+.theme-item {
+    color: #7a7a7a;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.theme-item:last-child {
+    margin-bottom: 0;
+}
+.btn-theme {
+    background-color: #b94e5e;
+    border: 2px solid #b94e5e;
+}
+/*--//---*/
+
+
+
+
+@media (max-width: 991px) {
+    .avalon-bg {
+        padding: 175px 0;
+        text-align: center;
+        background-position: center;
+    }
+    .avalon-text:after {
+        margin: 20px auto 0;
+    }
+    .danya {
+        margin-top: 10px;
+    }
+    .theme-bg-right {
+        padding: 30px;
+    }
+}
+
+

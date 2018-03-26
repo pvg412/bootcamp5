@@ -7,39 +7,38 @@
     margin: 0;
     padding: 0;
 }
-
 .clearfix:after {
     display: block;
     content: "";
     clear: both;
 }
-
 .container {
     max-width: 1100px;
     margin: auto;
     /*border: 1px solid #ff6942;*/
 }
-
+.header {
+    padding: 40px 0 30px;
+}
 .logo {
     float: left;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     color: #555252;
-    line-height: 91px;
     text-decoration: none;
 }
-
 .logo:first-letter {
     color: #1abc9c;
     font-weight: bold;
 }
-
-.menu {
+.nav {
     float: right;
-    line-height: 91px;
-}
 
+}
+.menu {
+    box-sizing: border-box;
+}
 .menu_item {
     float: left;
     list-style: none;
@@ -48,34 +47,26 @@
     font-family: "Open Sans", sans-serif;
     margin: 0 32px 0 0;
 }
-
 .menu_item:last-child {
     margin: 0 0 0 0;
 }
-
 .menu_item:hover .menu_item_link{
     color: #1abc9c;
 }
-
 .menu_item_link {
     text-decoration: none;
     color: #000000;
-}
-
-
-.header {
-    /*border: 4px solid #1c8012;*/
 }
 
 /*стили для box1*/
 .box1 {
     background-image: url(../img/pic1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .section-box1 {
-    width: 1100px;
-    float: left;
+    padding: 220px 0 220px;
 }
 
 .l_btn_box1 {
@@ -84,9 +75,7 @@
     background-color: #1abc9c;
     border: 0;
     color: #fff;
-    font-size: 60px;
     vertical-align: bottom;
-    font-family: 'Roboto', sans-serif;
 }
 
 .r_btn_box1 {
@@ -95,8 +84,6 @@
     background-color: #1abc9c;
     border: 0;
     color: #fff;
-    font-size: 60px;
-    font-family: 'Roboto', sans-serif;
 }
 
 .l_btn_box1:hover {
@@ -130,6 +117,9 @@
 }
 
 
+.content_box1 {
+
+}
 
 .caption_box1 {
     font-family: 'Roboto', sans-serif;
@@ -159,6 +149,7 @@
 .box2 {
     background-color: #e9f0fd;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .caption_box2 {
@@ -166,7 +157,6 @@
     font-size: 48px;
     color: #515151;
     text-align: center;
-    padding-top: 100px;
 }
 
 .caption_box2:after {
@@ -175,7 +165,7 @@
     width: 250px;
     height: 7px;
     background-color: #1abc9c;
-    margin: 30px auto;
+    margin: 30px auto 0;
 
 }
 

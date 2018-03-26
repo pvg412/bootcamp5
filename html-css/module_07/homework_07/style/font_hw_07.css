@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: "SENYUM";
-    src: url("../font/font/SENYUM V1/SENYUM V1.ttf")format ("truetype"),
+    src: url("../font/font/SENYUM V1/SENYUM V1.ttf")format("truetype"),
 url("../font/font/SENYUM V1.woff")format("woff"),
 url("../font/font/SENYUM V1.woff2")format("woff2");
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 @font-face {
     font-family: "Wisdom";
@@ -42,5 +42,11 @@ url("../font/font/SENYUM V1.woff2")format("woff2");
     font-style: normal;
 }
 
-
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/roboto-slab-v7-regular.woff")format("woff");
+url("../font/Roboto/roboto-slab-v7-regular.woff2")format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 
