@@ -1,0 +1,26 @@
+.header {
+  padding: rem(15) 0;
+}
+
+.logo {
+  font-size: rem(32);
+  color: $bg-color;
+  font-weight: 700;
+  font-family: $font;
+}
+
+.nav {
+
+   &__link {
+     display: block;
+     text-align: center;
+     padding: rem(14) rem(8);
+     color: $black;
+     font-size: rem(16);
+     text-transform: capitalize;
+     font-family: $font;
+     &:hover {
+       color: $green;
+     }
+   }
+}

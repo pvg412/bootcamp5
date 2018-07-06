@@ -1,0 +1,1 @@
+"use strict";function odd(o,l){return o+l}console.log("hello"),console.log(odd(10,20));

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>10.05.2018</title>
+</head>
+<body>
+
+<!--
+<div class="content-placeholder"></div>
+
+<script id="qwe" type="text/x-handle-template">
+    <p>You can find me in {{city}}</p>
+</script>
+
+
+<script id="qwe" type="text/x-handle-template">
+    <p>You can find me in {{city}}</p>
+
+</script>
+-->
+
+
+<!--
+        &lt;!&ndash; Меню &ndash;&gt;
+
+<div id="menu-container"></div>
+
+<script type="hbs/template" id="menu">
+    <div class="menu">
+        <h3 class="menu-title">{{title}}</h3>
+        <ul class="menu-list">
+            {{#each items}}
+            <li class="menu-item">{{this}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</script>
+-->
+
+
+<!--
+        &lt;!&ndash; Отрисовка галлереи через способ #each - перебор объекта &ndash;&gt;
+
+<div class="gallery">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="gallery-content"></div>
+</div>
+
+&lt;!&ndash;<div class="gallery-item">
+    <img class="gallery-img" src="" alt="image">
+    <p class="gallery-text"></p>
+</div>&ndash;&gt;
+
+<script id="gallery" type="hbs/template">
+            {{#each images}}
+            <div class="gallery-item">
+                <img class="gallery-img" src={{this.img}} alt="image">
+                <p class="gallery-text">{{this.text}}</p>
+            </div>
+            {{/each}}
+</script>
+-->
+
+
+
+
+
+
+
+
+
+
+<!--
+
+            &lt;!&ndash;Шаблон для перебора через reduce&ndash;&gt;
+&lt;!&ndash;
+<ul class="list">
+    <li class="item">
+        <p class="name"></p>
+        <span class="count"></span>
+    </li>
+</ul>
+&ndash;&gt;
+
+<ul class="list"></ul>
+
+<script id="menu" type="hbs/template">
+    <li class="item">
+        <p class="name">{{name}}</p>
+        <span class="count">{{count}}</span>
+    </li>
+</script>
+
+-->
+
+
+
+
+
+
+<!--
+        &lt;!&ndash;Отрисовка шаблона галлеречи через способ reduce&ndash;&gt;
+
+<div class="gallery">
+    <h2 class="gallery-title">Gallery</h2>
+    <div class="gallery-content"></div>
+</div>
+
+<script type="hbs/template" id="gallery-item">
+    <div class="gallery-item">
+        <img class="gallery-img" src="{{img}}" alt="{{text}}">
+        <p class="gallery-text">{{text}}</p>
+    </div>
+</script>
+-->
+
+
+
+
+
+
+        <!-- html шаблон для отображения карточек с мобильными телефонами объекта 'phones' -->
+<!--<div class="wrap">
+<input type="text" class="text">
+<button class="filter-apple">Filter</button>
+</div>
+
+<div class="card">
+
+</div>
+
+<script id="card-id" type="hsd/plat">
+<div class="module-card-bottom">
+    <img src={{image}} alt="cheesecake" class="module-card-img"/>
+    <p class="title">{{name}}</p>
+    <div>
+        <p>{{description}}</p>
+    </div>
+
+    <ul class="show">
+        <li>{{cpu}}</li>
+        <li>{{camera}}</li>
+        <li>{{size}}</li>
+        <li>{{weight}}</li>
+        <li>{{display}}</li>
+        <li>{{battery}}</li>
+        <li>{{memory}}</li>
+    </ul>
+    <button class="module-card-button">See More</button>
+</div>
+</script>-->
+
+
+
+
+
+
+
+
+
+        <!--Шаблоны для ноутбуков-->
+<form class="form js-form">
+    <section>
+        <h2>Screen size</h2>
+        <ul>
+            <li><label><input type="checkbox" name="size" value="13"> 13"</label></li>
+            <li><label><input type="checkbox" name="size" value="15"> 15"</label></li>
+            <li><label><input type="checkbox" name="size" value="17"> 17"</label></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Color</h2>
+        <ul>
+            <li><label><input type="checkbox" name="color" value="white"> white</label></li>
+            <li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+            <li><label><input type="checkbox" name="color" value="black"> black</label></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Release date</h2>
+        <ul>
+            <li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+            <li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+            <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+        </ul>
+    </section>
+    <button type="button" class="btn">Filter</button>
+    <button type="button" class="reset">Clear</button>
+</form>
+
+<div class="card"></div>
+<script id="card-id" type="hdb/template">
+    <div class="module-card-bottom">
+        <img src={{img}} alt="cheesecake" class="module-card-img"/>
+        <p class="title">{{name}}</p>
+        <div>
+            <p>{{descr}}</p>
+        </div>
+
+        <ul class="show">
+            <li>{{color}}</li>
+            <li>{{price}}</li>
+            <li>{{releaseDate}}</li>
+        </ul>
+        <button class="module-card-button">See More</button>
+    </div>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

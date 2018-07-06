@@ -1,0 +1,50 @@
+.footer {
+  padding: rem(48) 0;
+
+  &__info {
+    margin: 0 0 rem(30);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.info {
+  font-family: $font;
+  font-weight: 700;
+  color: $white;
+
+  & > .sub-title {
+    margin: 0 0 rem(24);
+  }
+
+  &__req {
+    margin: 0 0 rem(17);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__form {
+    margin: rem(30) 0 0;
+    display: flex;
+  }
+
+  &__mail {
+    padding: rem(15);
+    background-color: $black;
+    outline: none;
+    border: rem(1) solid $white;
+    color: $white;
+  }
+
+  &__send {
+    padding: rem(15);
+    background-color: $green;
+    border: rem(1) solid $green;
+    text-transform: capitalize;
+    color: $white;
+  }
+}

@@ -10,14 +10,14 @@
 }
 
 .container {
-    width: 58.125rem;
+    width: 58.725rem;
     margin: auto;
 }
 /*хэдэр*/
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 2.687rem;
+    margin-top: 2.087rem;
 }
 .logo {
     font-family: var(--ffw);
@@ -25,7 +25,8 @@
     font-size: 1.625rem;
     text-decoration: none;
     transition: 1s;
-
+    letter-spacing: 0.125rem;
+    margin-left: 0.3rem;
 }
 .logo:hover  {
     color: black;
@@ -35,15 +36,19 @@
 }
 .nav {
     flex-basis: 30rem;
+    background-color: orange;
+
 }
 .menu {
     display: flex;
     list-style: none;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 1rem;
 }
 .menu-item-link {
     font-family: var(--ffm);
+    font-size: 0.875rem;
     text-decoration: none;
     text-transform: uppercase;
     color: #222222;

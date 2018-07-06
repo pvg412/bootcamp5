@@ -1,0 +1,47 @@
+.about {
+  padding: rem(48) 0;
+
+  &__container {
+    background-color: $bg-color;
+    padding: rem(48);
+  }
+
+  &__sub-title {
+    margin: 0 0 rem(23);
+  }
+
+  &__body {
+    margin: rem(32) 0 0;
+  }
+
+  &__counter {
+    margin: 0 0 rem(16);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+}
+
+.counter {
+
+  &__number {
+    font-weight: 700;
+    color: $white;
+    font-family: $font;
+    font-size: 2.3rem;
+    letter-spacing: rem(3);
+    margin: 0 0 rem(16);
+    display: block;
+  }
+
+  &__name {
+    color: $green;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    font-family: $font;
+    font-size: 0.9rem;
+  }
+}

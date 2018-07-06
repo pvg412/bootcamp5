@@ -1,0 +1,76 @@
+.learn {
+  padding: rem(48) 0;
+
+  &__body {
+    margin: rem(24) 0 0;
+  }
+
+  &__post {
+    display: flex;
+    border: rem(1) solid #d7d7d7;
+    margin: 0 0 rem(30);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__date {
+    background-color: $green;
+    color: $white;
+    font-size: rem(24);
+    font-weight: 700;
+    font-family: $font;
+    text-align: center;
+    padding: rem(13);
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    padding: rem(13) rem(20);
+  }
+
+  &__text {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: $black;
+    font-family: $font;
+    margin: 0 0 rem(8);
+  }
+
+  &__comment {
+    font-size: rem(14);
+    color: $green;
+    font-family: $font;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin: 0 0 rem(32);
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--bgc {
+      background-color: $bg-color;
+      color: $white;
+      padding: rem(32);
+    }
+
+    & > .sub-title--green {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    margin: rem(20) 0 0;
+    font-family: $font;
+    font-weight: 700;
+  }
+
+  &__tick {
+    line-height: rem(32);
+  }
+}

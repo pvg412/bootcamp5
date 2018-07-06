@@ -1,0 +1,27 @@
+.progressBar {
+    background-color: greenyellow;
+    height: 20px;
+}
+
+.wrapper {
+    width: 500px;
+    display: block;
+    margin: auto;
+    border: 1px solid green;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.clock {
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 2px;
+    background-color: darkslateblue;
+    color: white;
+    border: 0px;
+    font-weight: bold;
+}

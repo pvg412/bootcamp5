@@ -1,0 +1,770 @@
+/*
+   Import partials below
+*/
+
+/*@import "normalize";*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.wrapper {
+	background-color: #ffffff;
+}
+
+.wrapper--about {
+	background-image: url(../img/bann3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.wrapper--news {
+	background-image: url(../img/bann1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.wrapper--slider {
+	background-image: url(../img/bann2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.wrapper--footer {
+	background-color: #0b0c11;
+}
+
+.container {
+	min-width: 20rem;
+	max-width: 73.125rem;
+	padding: 0 1rem;
+	margin: auto;
+}
+
+.title {
+	font-family: "Raleway", sans-serif;
+	font-size: 2.3rem;
+	color: #000000;
+	font-weight: 700;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.title:first-letter {
+	color: #93c83f;
+}
+
+.title--white {
+	color: #ffffff;
+}
+
+.sub-title {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.125rem;
+	color: #000000;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sub-title--white {
+	color: #ffffff;
+	font-size: 1.4375rem;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.sub-title--green {
+	color: #93c83f;
+	font-size: 1.25rem;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.text {
+	font-size: 1rem;
+	color: #9f9f9f;
+	font-family: "Raleway", sans-serif;
+	line-height: 1.8rem;
+}
+
+.text--center {
+	text-align: center;
+}
+
+.text--white {
+	color: #ffffff;
+}
+
+.counter {
+	font-size: 0.5625rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	counter-reset: qwerty;
+}
+
+.counter:before {
+	content: "";
+	display: inline-block;
+	width: 0.3125rem;
+	height: 0.3125rem;
+	margin-right: 0.625rem;
+	background-color: #000000;
+}
+
+.counter--numb:before {
+	content: "";
+	display: inline-block;
+	width: 0.3125rem;
+	height: 0.3125rem;
+	margin-right: 0.625rem;
+	background-color: #93c83f;
+}
+
+.header {
+	padding: 0.9375rem 0;
+}
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	text-transform: capitalize;
+	font-size: 2rem;
+	color: #1e3953;
+	font-weight: bold;
+}
+
+.logo:hover {
+	color: #93c83f;
+}
+
+.nav__link {
+	display: block;
+	text-align: center;
+	padding: 0.875rem 0.5rem;
+	font-size: 1rem;
+	color: #000000;
+	text-transform: capitalize;
+	font-family: "Raleway", sans-serif;
+}
+
+.nav__link:hover {
+	color: #93c83f;
+}
+
+.slider {
+	padding: 6.25rem 0;
+}
+
+.slider__title {
+	color: #ffffff;
+	font-size: 1.8rem;
+	text-transform: capitalize;
+	text-align: center;
+	font-weight: 700;
+	font-family: "Raleway", sans-serif;
+}
+
+.slider__span {
+	color: #93c83f;
+	display: block;
+}
+
+.services {
+	padding: 2.5rem 0;
+}
+
+.services__body {
+	margin-top: 1.875rem;
+}
+
+.services__favor {
+	margin: 0 0 1.5rem;
+}
+
+.services__favor:last-child {
+	margin-bottom: 0;
+}
+
+.favor {
+	padding: 2.5rem 1.25rem;
+	border: 0.0625rem solid #e5e7e9;
+}
+
+.favor__img {
+	margin: 0 auto 2.25rem;
+}
+
+.favor__sub--title {
+	margin: 0 0 1rem;
+}
+
+.about {
+	padding: 3rem 0;
+}
+
+.about__container {
+	background-color: #1e3953;
+	padding: 3rem;
+}
+
+.about__sub-title {
+	margin: 0 0 1.4375rem;
+}
+
+.about__body {
+	margin: 2rem 0 0;
+}
+
+.about__counter {
+	margin: 0 0 1rem;
+}
+
+.about__counter:last-child {
+	margin: 0;
+}
+
+.counter__number {
+	font-weight: 700;
+	color: #ffffff;
+	font-family: "Raleway", sans-serif;
+	font-size: 2.3rem;
+	letter-spacing: 0.1875rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+.counter__name {
+	color: #93c83f;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: 700;
+	display: block;
+	font-family: "Raleway", sans-serif;
+}
+
+.test {
+	padding: 2.5rem 0;
+}
+
+.test__body {
+	margin: 1.875rem 0 0;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.test__img {
+	margin: 0 0 1.5rem;
+}
+
+.test__title {
+	margin: 0.8125rem 0 0;
+	font-family: "Raleway", sans-serif;
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.test__text {
+	margin-top: 0.8125rem;
+}
+
+.news {
+	padding: 2.5rem 0;
+}
+
+.news__body {
+	margin: 1.875rem 0 0;
+}
+
+.news__post {
+	margin-bottom: 1.5rem;
+}
+
+.news__post:last-child {
+	margin-bottom: 0;
+}
+
+.post__container {
+	box-shadow: 0.0625rem 0.0625rem 1.0625rem #ffffff;
+	background-color: #ffffff;
+	padding: 1.5rem 1.5rem 3rem 1.5rem;
+	text-align: center;
+}
+
+.post__container > .sub-title--green {
+	text-align: center;
+}
+
+.post__date {
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #000000;
+	font-family: "Raleway", sans-serif;
+	letter-spacing: 0.0625rem;
+	margin: 0 0 1rem;
+	display: block;
+}
+
+.post__sub-title {
+	text-transform: uppercase;
+	margin: 0 0 1rem;
+}
+
+.learn {
+	padding: 3rem 0;
+}
+
+.learn__body {
+	margin: 1.5rem 0 0;
+}
+
+.learn__post {
+	display: flex;
+	border: 0.0625rem solid #d7d7d7;
+	margin: 0 0 1.875rem;
+}
+
+.learn__post:last-child {
+	margin: 0;
+}
+
+.learn__date {
+	background-color: #93c83f;
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	padding: 0.8125rem;
+	text-transform: uppercase;
+}
+
+.learn__desc {
+	padding: 0.8125rem 1.25rem;
+}
+
+.learn__text {
+	text-transform: capitalize;
+	font-weight: 700;
+	color: #000000;
+	font-family: "Raleway", sans-serif;
+	margin: 0 0 0.5rem;
+}
+
+.learn__comment {
+	font-size: 0.875rem;
+	color: #93c83f;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+}
+
+.learn__item {
+	margin: 0 0 2rem;
+}
+
+.learn__item:last-child {
+	margin: 0;
+}
+
+.learn__item--bgc {
+	background-color: #1e3953;
+	color: #ffffff;
+	padding: 2rem;
+}
+
+.learn__item > .sub-title--green {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.learn__list {
+	margin: 1.25rem 0 0;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+}
+
+.learn__tick {
+	line-height: 2rem;
+}
+
+.footer {
+	padding: 3rem 0;
+}
+
+.footer__info {
+	margin: 0 0 1.875rem;
+}
+
+.footer__info:last-child {
+	margin: 0;
+}
+
+.info {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.info > .sub-title {
+	margin: 0 0 1.5rem;
+}
+
+.info__req {
+	margin: 0 0 1.0625rem;
+}
+
+.info__req:last-child {
+	margin: 0;
+}
+
+.info__form {
+	margin: 1.875rem 0 0;
+	display: flex;
+	width: 100%;
+}
+
+.info__mail {
+	padding: 0.9375rem;
+	background-color: #000000;
+	outline: none;
+	border: 0.0625rem solid #ffffff;
+	color: #ffffff;
+	flex-grow: 1;
+}
+
+.info__send {
+	padding: 0.9375rem;
+	background-color: #93c83f;
+	border: 0.0625rem solid #93c83f;
+	text-transform: capitalize;
+	color: #ffffff;
+	flex-grow: 0.2;
+}
+
+@media (min-width: 480px) {
+
+.counter {
+	font-size: 0.8125rem;
+}
+
+.counter:before {
+	margin-right: 1.125rem;
+}
+
+.counter--numb:before {
+	margin-right: 1.125rem;
+}
+
+}
+
+@media (min-width: 768px) {
+
+.title {
+	font-size: 2.7rem;
+}
+
+.sub-title {
+	font-size: 1.25rem;
+}
+
+.sub-title--green {
+	font-size: 1.5rem;
+}
+
+.counter {
+	font-size: 0.5625rem;
+}
+
+.counter:before {
+	margin-outside: 1.25rem;
+}
+
+.counter--numb:before {
+	margin-right: 1.25rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__menu {
+	display: flex;
+}
+
+.slider {
+	padding: 9.09375rem 0;
+}
+
+.slider__title {
+	font-size: 3rem;
+}
+
+.services {
+	padding: 5rem 0;
+}
+
+.services__body {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4.5rem;
+}
+
+.services__favor {
+	flex-basis: 30%;
+	margin-bottom: 0;
+}
+
+.about {
+	padding: 5rem 0;
+}
+
+.about__sub-title {
+	font-size: 2.25rem;
+}
+
+.about__container {
+	width: 66%;
+}
+
+.about__body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about__counter {
+	flex-basis: 50%;
+}
+
+.about__counter:nth-last-child(-n+2) {
+	margin: 0;
+}
+
+.counter__number {
+	font-size: 3rem;
+}
+
+.counter__name {
+	font-size: 1.1rem;
+}
+
+.test {
+	padding: 5rem 0;
+}
+
+.test__body {
+	width: 65.21739%;
+	margin: 1.875rem auto 0;
+}
+
+.news {
+	padding: 5rem 0;
+}
+
+.news__body {
+	display: flex;
+	justify-content: space-around;
+	margin: 4.5rem 0 0;
+}
+
+.news__post {
+	flex-basis: 28.53261%;
+	margin: 0;
+}
+
+.learn {
+	padding: 5rem 0;
+}
+
+.learn__body {
+	margin: 4.5rem 0;
+}
+
+.learn__date {
+	font-size: 1.5625rem;
+	padding: 1.25rem;
+}
+
+.learn__desc {
+	width: 100%;
+	padding: 1.5rem 1.6875rem 1.125rem;
+}
+
+.learn__text {
+	font-size: 1.25rem;
+}
+
+.learn__item--bgc {
+	padding: 3rem;
+}
+
+.learn__list {
+	margin: 3.25rem 0 0;
+}
+
+.footer {
+	padding: 5rem 0;
+}
+
+.info > .sub-title {
+	font-size: 1.5rem;
+	margin: 0 0 2.25rem;
+}
+
+}
+
+@media (min-width: 960px) {
+
+.counter {
+	font-size: 0.75rem;
+}
+
+.counter:before {
+	margin-right: 1.6875rem;
+}
+
+.counter--numb:before {
+	margin-right: 1.6875rem;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.title {
+	font-size: 3rem;
+}
+
+.logo {
+	font-size: 2.375rem;
+}
+
+.nav {
+	flex-basis: 59.57447%;
+}
+
+.nav__menu {
+	justify-content: space-between;
+}
+
+.slider {
+	padding: 12rem 0;
+}
+
+.slider__title {
+	font-size: 3.5rem;
+}
+
+.about__container {
+	padding: 4rem;
+	width: 56%;
+}
+
+.test__body {
+	flex-direction: row;
+	align-items: flex-start;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.test__img {
+	margin: 0;
+	width: 50%;
+}
+
+.test__caption {
+	flex-basis: 44.72527%;
+}
+
+.learn__body {
+	display: flex;
+	justify-content: space-around;
+}
+
+.learn__item {
+	flex-basis: 45%;
+	margin-bottom: 0;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer__info {
+	margin: 0;
+}
+
+.info {
+	flex-basis: 30%;
+}
+
+.info--contact {
+	flex-basis: 22%;
+}
+
+.info--subscribe {
+	flex-basis: 35%;
+}
+
+.info__form {
+	margin: 1.0625rem 0 0;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+.counter {
+	font-size: 0.75rem;
+}
+
+.counter:before {
+	margin-right: 1.5rem;
+}
+
+.counter--numb:before {
+	margin-right: 1.5rem;
+}
+
+}
+
+@media (min-width: 1440px) {
+
+.counter {
+	font-size: 0.75rem;
+}
+
+.counter:before {
+	margin-right: 1.875rem;
+}
+
+.counter--numb:before {
+	margin-right: 1.875rem;
+}
+
+}
+

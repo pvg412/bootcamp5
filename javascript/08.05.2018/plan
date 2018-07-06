@@ -1,0 +1,35 @@
+    План поочередности выполнения команд для корретной установки связи с gulp
+1. Установка
+2. Основы node.js
+3. npm
+4. Инициализация
+5. npm init
+6. start - создали помоему
+7. npm start.
+8. npm install
+9. npm uninstall
+10. --save
+11. --save-dev
+12. require
+13. gulpfile.js
+14. npm install gulp --save-dev
+15. const culp = require('gulp');
+16. gulp.task
+
+package.json и gulpfile.js - обязательно должны быть по соседству с файлом index.html
+файл в котором прописаны все инструкции
+
+devDependences - ключ, в который добавлются плагины, которые мы ставим, чтобы работать с ними - РАБОТАЕМ В РЕДАКТОРЕ
+dependences - ключ, в котором хранятся плагины УЖЕ для выгрузки на сервер                     - ЗАГРУЖАЕМ НА СЕРВЕР
+
+когда мы пишем npm install --save-dev   - создаем devDependences
+когда мы пишем npm install --save       - создаем dependences
+
+Как же пользоваться этими инструкциями-плагинами?
+rigger - плагин, который объединяет файлы html в один
+
+gulp.task
+
+нужно подключить шрифты
+
+babel-core и babel-preset-env - для них task не нужен. они добавлены для того, чтобы мы просто обращались к gulp-babel

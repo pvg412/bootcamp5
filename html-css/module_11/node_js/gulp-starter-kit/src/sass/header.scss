@@ -1,0 +1,182 @@
+.counter {
+  //font-family: $acrom;
+  font-size: rem(9);
+  font-weight: bold;
+  text-transform: capitalize;
+  counter-reset: qwerty;
+
+
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: rem(5);
+    height: rem(5);
+    margin-right: rem(10);
+    background-color: $black;
+  }
+
+  &--numb {
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: rem(5);
+      height: rem(5);
+      margin-right: rem(10);
+      background-color: $green;
+    }
+
+  }
+}
+
+@media (min-width: 480px) {
+  .counter {
+    font-size: rem(13);
+
+    &:before {
+      margin-right: rem(18);
+    }
+
+    &--numb {
+
+      &:before {
+        margin-right: rem(18);
+      }
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+  .counter {
+    font-size: rem(9);
+
+    &:before {
+      margin-outside: rem(20);
+    }
+
+    &--numb {
+      &:before {
+        margin-right: rem(20);
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .counter {
+    font-size: rem(12);
+
+    &:before {
+      margin-right: rem(27);
+    }
+
+    &--numb {
+      &:before {
+        margin-right: rem(27);
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .counter {
+    font-size: rem(12);
+
+    &:before {
+      margin-right: rem(24);
+    }
+
+    &--numb {
+      &:before {
+        margin-right: rem(24);
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .counter {
+    font-size: rem(12);
+
+    &:before {
+      margin-right: rem(30);
+    }
+
+    &--numb {
+      &:before {
+        margin-right: rem(30);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.header {
+  padding: rem(15) 0;
+}
+
+.logo {
+  font-family: $font;
+  text-transform: capitalize;
+  font-size: rem(32);
+  color: $bg-color;
+  font-weight: bold;
+  &:hover {
+    color: $green;
+  }
+}
+
+.nav {
+  &__link {
+    display: block;
+    text-align: center;
+    padding: rem(14) rem(8);
+    font-size: 1rem;
+    color: $black;
+    text-transform: capitalize;
+    font-family: $font;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+
+    &__menu {
+      display: flex;
+    }
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+
+  .logo {
+    font-size:rem(38);
+  }
+
+  .nav {
+    flex-basis: prc(560, 940);
+
+    &__menu {
+      justify-content: space-between;
+    }
+  }
+}
