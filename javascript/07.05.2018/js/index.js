@@ -61,7 +61,7 @@ btnBnal.addEventListener('click', secondFetch);
 
 
 
-                    /*  Задача #2 (07.05.2018)   */
+/*  Задача #2 (07.05.2018)   */
 
 /*
 1. Нужно чтобы была строка запроса
@@ -117,7 +117,7 @@ window.addEventListener('keypress', function (event) {
     }
 });*/
 
-        /*Часть, в которой добавляем видео*/
+/*Часть, в которой добавляем видео*/
 // https://pixabay.com/api/videos/?key=8929250-381b43e28bfa30a3211fde2cd&q=yellow+flowers
 // https://pixabay.com/api/videos/?key=8929250-381b43e28bfa30a3211fde2cd&q=${value}&video_type=all&per_page=3
 // <p> ${elem.tags} </p>
@@ -134,7 +134,7 @@ function paintGallery() {
         });
 }
 
-function create (array) {
+function create(array) {
     let div = document.querySelector('#container');
     let gallery = array.reduce(function (acc, elem) {
         return acc + `<div class="one">

@@ -2,19 +2,19 @@
 
 // ----------------------------- РАСЧЕТ СТОИМОСТИ кг ШАШЛЫКА --------------------------
 
-// let total = document.querySelector('.total');
-// let form = document.querySelector('.form');
-//
-// function calc () {
-//   let price =  document.querySelector('#price').value;
-//   let range = document.querySelector('#quantity').value;
-//   document.querySelector('.amount').innerText = range;
-//   total.textContent=`${(price * range).toFixed(2)} $`;
-// }
-//
-// form.addEventListener('input', calc);
-// calc();
-// window.addEventListener('DOMContentLoaded', calc);
+let total = document.querySelector('.total');
+let form = document.querySelector('.form');
+
+function calc () {
+  let price =  document.querySelector('#price').value;
+  let range = document.querySelector('#quantity').value;
+  document.querySelector('.amount').innerText = range;
+  total.textContent=`${(price * range).toFixed(2)} $`;
+}
+
+form.addEventListener('input', calc);
+calc();
+window.addEventListener('DOMContentLoaded', calc);
 
 
 // ------------------------------------ КАЛЬКУЛЯТОР -----------------------------------

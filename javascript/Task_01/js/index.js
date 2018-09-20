@@ -173,8 +173,63 @@ document.write(a.length);*/
 // console.log(d);
 
 //28
-let a = 'Hello world, welcome to the universe.';
+// let a = 'Hello world, welcome to the universe.';
+// console.log(a);
 
 
 
+// var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+// console.log(myFish);
+// var removed = myFish.splice(2, 0, 'drum');
+// console.log(myFish);
+
+// var numbers = [ 1, -12, 8, -4, 25, 42 ];
+// function condition(value, index, array) {
+//     var result = false;
+//     if (value > 0) {
+//         result = true;
+//     }
+//     return result;
+// };
+// var passed = numbers.every(condition);
+// document.write(passed); // false
+
+// var animal = {
+//     eats: true
+//   };
+//   var rabbit = {
+//     jumps: true
+//   };
+
+  
+// // rabbit.__proto__ = animal;
+// rabbit.__proto__ = animal;
+// // в rabbit можно найти оба свойства
+// alert( rabbit.jumps ); // true
+// alert( rabbit.eats ); // true
+
+const adminLogin = 'admin';
+const adminPassword = 'm4ngo1zh4ackz0r';
+
+let userCancel = 'Отменено пользователем!';
+let userError = 'Доступ запрещён!';
+let userWellcome = 'Добро пожаловать!';
+
+let login = prompt('Enter login');
+
+if (login === null) {
+    alert(stouserCancelp)
+} else if (login !== adminLogin ) {
+    alert(userError)
+} else if (login === adminLogin) {
+    let password = prompt('Enter your password');
+    
+    if (password === null) {
+        alert(stouserCancelp)
+    } else if (password !== adminPassword) {
+        alert(userError)
+    } else if (password === adminPassword) {
+        alert(userWellcome)
+    }
+}
 
