@@ -208,28 +208,88 @@ document.write(a.length);*/
 // alert( rabbit.jumps ); // true
 // alert( rabbit.eats ); // true
 
-const adminLogin = 'admin';
-const adminPassword = 'm4ngo1zh4ackz0r';
 
-let userCancel = 'Отменено пользователем!';
-let userError = 'Доступ запрещён!';
-let userWellcome = 'Добро пожаловать!';
 
-let login = prompt('Enter login');
 
-if (login === null) {
-    alert(stouserCancelp)
-} else if (login !== adminLogin ) {
-    alert(userError)
-} else if (login === adminLogin) {
-    let password = prompt('Enter your password');
+//          // task_1.1 
+// const adminLogin = 'admin';
+// const adminPassword = 'm4ngo1zh4ackz0r';
+
+// let userCancel = 'Отменено пользователем!';
+// let userError = 'Доступ запрещён!';
+// let userWellcome = 'Добро пожаловать!';
+
+// let login = prompt('Enter login');
+
+// if (login === null) {
+//     alert(stouserCancelp)
+// } else if (login !== adminLogin ) {
+//     alert(userError)
+// } else if (login === adminLogin) {
+//     let password = prompt('Enter your password');
     
-    if (password === null) {
-        alert(stouserCancelp)
-    } else if (password !== adminPassword) {
-        alert(userError)
-    } else if (password === adminPassword) {
-        alert(userWellcome)
-    }
-}
+//     if (password === null) {
+//         alert(stouserCancelp)
+//     } else if (password !== adminPassword) {
+//         alert(userError)
+//     } else if (password === adminPassword) {
+//         alert(userWellcome)
+//     }
+// }
 
+//          // task_1.2
+// const sharm = 15;
+// const hurgada = 25;
+// const taba = 6;
+
+// let numberOfPlaces = +prompt('Введите число необходимых мест');
+// console.log(typeof numberOfPlaces);
+
+// // if (typeof numberOfPlaces !== Number) {
+// //     alert('Ошибка ввода')
+// // }
+// if (typeof numberOfPlaces !== "number" || Number.isInteger(numberOfPlaces) !== true || numberOfPlaces <= 0 ) {
+//     alert('Ошибка ввода')
+// } else {
+//     if (numberOfPlaces > sharm || numberOfPlaces > hurgada || numberOfPlaces > taba) {
+//         alert('Извините, столько мест нет ни в одной группе!')
+//     } 
+    
+//     else if (filterGroup() => {}) {
+//         confirm('') 
+//     }
+// }
+
+//          // task_2.1
+// let userInput;
+// const numbers = [];
+// let total = 0;
+// do {
+//     userInput = +prompt('enter the word', '');
+//     userInput !== 0 ? numbers.push(userInput) : null;
+//     console.log(userInput);
+//     console.log(numbers);
+// } while (userInput !== 0) {
+//     // аналог метода for...of
+//     total = numbers.reduce(function(prev, curr) {
+//         return prev + curr
+//     });
+//     alert(`total = ${total}`)    
+// }
+// do {
+//     userInput = +prompt('enter the word', '');
+//     userInput !== 0 ? numbers.push(userInput) : null;
+//     console.log(userInput);
+//     console.log(numbers);
+// } while (userInput !== 0) {
+//     for (let elemValue of numbers) {
+//         total = elemValue + total; // замена метода reduce      
+//     }
+//     alert(`total = ${total}`)
+// }
+
+
+
+//          // task_2.2
+const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
+let attempts = 3;
